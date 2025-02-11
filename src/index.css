@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+	height: 100vh;
+	background: linear-gradient(-45deg, #030014, #3a0072, #6e00c9, #030014);
+	background-size: 400% 400%;
+	animation: gradientAnimation 15s ease infinite;
+	color: white; /* Text color for contrast */
+	font-family: 'Arial', sans-serif;
+}
+
+/* Keyframes for the gradient animation */
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.edit-popover .MuiPaper-root {
+    backdrop-filter: blur(10px) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.aYaNR {
+	width: 100% !important;
+}
+
+.bIEiXW {
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.time-picker .MuiFormLabel-root{
+	color: #ffffff !important;
+}
+
+.time-picker .MuiInputBase-input {
+	color:  #ffffff !important;
+}
+
+.time-picker .MuiSvgIcon-root {
+	color: #ffffff !important;
+}
+
+.draggable-card {
+	position: absolute;
+	top: 50px;
+	left: 38%;
+}
+
+.center-popper .MuiPaper-root {
+    backdrop-filter: blur(5px) !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.text-ellipsis {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 300px;
+}
+
+.icon-outlook .aYaNR{
+	padding-left: 55px;
+}

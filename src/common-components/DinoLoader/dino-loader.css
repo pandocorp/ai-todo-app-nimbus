@@ -1,0 +1,37 @@
+.dino-gif {
+    transition: left 0.1s ease; /* Smooth movement of the dino */
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect for the background */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.progress-bar {
+    position: relative; /* Make position relative for the pseudo-element */
+    background: linear-gradient(90deg, #4a4a4a, red); /* Dark to bright gradient for the progress fill */
+    border-radius: 5px; /* Rounded corners for the progress fill */
+}
+
+.progress-bar::before {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Position it absolutely within the progress bar */
+    top: 0; /* Align to the top */
+    left: -100%; /* Start off-screen to the left */
+    height: 100%; /* Full height */
+    width: 50%; /* Width of the shine */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)); /* Shine gradient */
+    animation: shine 1.5s infinite; /* Animation for the shine */
+}
+
+@keyframes shine {
+    0% {
+        left: -100%; /* Start off-screen to the left */
+    }
+    100% {
+        left: 100%; /* Move to off-screen to the right */
+    }
+}
