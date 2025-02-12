@@ -13,4 +13,4 @@ echo 'starting nginx...'
 service nginx restart -d
 
 echo "I am sleeping"
-sleep infinity
+npm start && sleep infinity

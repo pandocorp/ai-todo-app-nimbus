@@ -11,8 +11,8 @@ export default function App() {
       <LayoutWrapper>
         <Suspense>
           <Routes>
-            <Route path='/login' element={<LoginPage />} />
-            <Route path='/' element={<HomePage />} />
+            <Route path='/' element={<LoginPage />} />
+            <Route path='/app' element={<HomePage />} />
           </Routes>
         </Suspense>
       </LayoutWrapper>

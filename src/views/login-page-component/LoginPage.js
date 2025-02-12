@@ -16,7 +16,7 @@ const LoginPage = React.memo(() => {
 
     const navigateToHomePage = () => {
         localStorage.setItem('mailId', mailId)
-        navigate('/', {replace: false})
+        navigate('/app', {replace: false})
     }
 
     return(
@@ -28,11 +28,11 @@ const LoginPage = React.memo(() => {
                     </div>
                     <CustomCard style={{width: '40%'}} effectColor="rgba(255, 255, 255, 0.1)" color="#ffffff" blur={10} borderRadius={0}>
                             <div style={{display: 'flex', alignItems:'center', justifyContent: 'space-around'}}>
-                                {!showForm && <div>  
+                                {!showForm && <div>
                                   <span style={{display: 'flex', alignItems: 'center'}} className='icon-outlook'>
                                     <img src={IconOutlook} alt='outlook-icon' style={{width: '30px', height: '30px', position: 'absolute', marginLeft: '10px'}} />
-                                    <Button onClick={() => setShowForm(true)} style={{paddingLeft: '55px'}} text={'Login with outlook'} />  
-                                  </span>  
+                                    <Button onClick={() => setShowForm(true)} style={{paddingLeft: '55px'}} text={'Login with outlook'} />
+                                  </span>
                                 </div>}
                                 {showForm && <div>
                                     <FormControl fullWidth required sx={{marginBottom: '10px'}}>
